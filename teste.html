@@ -1,8 +1,8 @@
-<!DOCTYPE html> <!--instrução para o computador que diz qual versão do HTML-->
-<html> 
+<!DOCTYPE html> <!--Instrução para o computador que diz qual versão do HTML-->
+<html lang="pt-br"> 
     <head> 
-        <title>Criando uma pagina</title><!-- Título da página-->
-        <style>
+        <title>Criando uma página</title><!-- Título da página-->
+        <style type="text/css">
             aside{
                 border: 1px solid #000;
                 background-color: black;
@@ -18,10 +18,24 @@
             aside h1{
                 color: aliceblue;
             }
-        </style> <!-- definir/mudar o tipo de outras tags-->
+            .negrito1{
+                color: #f00;
+            }
+            .negrito2{
+                color: #0f0;
+            }
+            img{
+                width: 500px;
+            }
+            audio{
+                display: block;
+            }
+        </style> <!-- Definir/mudar o tipo de outras tags-->
+
     </head><!-- Cabeça da página-->
     <body> 
-        <p id="topo">Aprendendo ... </p> <!-- TAG de parágrafo-->
+        <a href="#final" id="topo"> final da página</a>
+        <p >Aprendendo ... </p> <!-- TAG de parágrafo-->
         <h1>HTML</h1> <!-- TAG de cabeçalho e fluxo-->
         <h2>HTML</h2> <!-- de 1 a 6-->
         <h3>HTML</h3> <!-- graus de subtítulos-->
@@ -85,16 +99,37 @@
                 é in do dessa todo mulher to os nunca, words A compro direi 
                 importantes nasceu Daqui sem pão Se Qual</p>
         </article> <!-- Definir seções do documento, podendo ter uma dentro da outra-->
+        <audio scr="audio.mp3" autoplay controls loop>
+            Seu Browser não tem suporte a tag audio
+        </audio> <!--TAG audio, usada para adicionar audio-->
+        <img src="gato.png">
+        <article>
+            <h1>Quarta Seção</h1>
+            <p>para dê o a o sonho quer que azul?Toda sucessivos Por cobrador… words o do </p>
+            
+            <p>Qual Toda yet <b class="negrito1">algarismos</b> que quer não salva! panda. 
+                é TVs principalmente. say out conhecidos pior. 
+                do Uma direi é elefante vou se pior. 
+                de You cessar. tem outra existo.</p>
+            
+            <p>a na discordo, rio que de importantes os o Terra homem... 
+                bicicleta são o em mim <!-- Classes são usadas para mudar de diferentes maneiras diferentes tags do mesmo tipo --> <b class="negrito2">jacaré</b> <!-- usada para colocar textos em negrito--> respeito, um são é caro! discordo, 
+                pra sempre exceção. </p>
+            
+            <p>Como que E coisa, but se sem costas. 
+                é in do dessa todo mulher to os nunca, words A compro direi 
+                importantes nasceu Daqui sem pão Se Qual</p>
+        </article> 
         <aside>
             <h1>Nota</h1>
             <p>É tudo mentira! tan tan tannn</p>
         </aside> <!-- Uma seção lateral, para tópicos adicionais-->
         <footer>
             <Address>
-                Autor: Sabrina Bruni<br>
+                Autor: Sabrina Bruni @2023<br>
                 Me siga no <a href="https://www.instagram.com/sabrinabruni/">instagram</a>
             </Address> <!-- Armazenar e exibir informações de contato, não utiliza tags de texto-->
         </footer>
-        <a href="#topo"> começo da pagina</a>
+        <a href="#topo" id="final"> começo da página</a>
     </body> <!-- Corpo da página-->
 </html> <!-- TAG raiz-->
